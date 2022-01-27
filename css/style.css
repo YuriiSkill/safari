@@ -234,6 +234,7 @@ margin-bottom: 15px;
     margin-bottom: 46px;
   }
 
+
   .about{
     padding-bottom: 100px;
   }
@@ -284,7 +285,7 @@ margin-bottom: 15px;
 
   .gallery__link{
     font-size: 16px;
-    line-height: 19;
+    line-height: 19px;
     text-decoration: underline;
   }
   
@@ -526,6 +527,18 @@ margin-bottom: 15px;
     .direction__img {
       width: 100%;
     }
+    .about__inner{
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 20px;
+    }
+
+  .gallery__item-inner{
+    grid-gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+      }
+      .gallery__item-img{
+        width: 100%;
+      }
   }
 
   @media (max-width:990px){
@@ -535,7 +548,12 @@ margin-bottom: 15px;
     .popular__items{
       grid-gap:10px;
     }
+
+    .tour__info {
+      grid-gap: 30px 15px;
+      grid-template-columns: repeat(3,1fr );
   }
+}
 
     
   @media (max-width:800px){
@@ -566,6 +584,82 @@ margin-bottom: 15px;
       padding: 50px 0;
     }
 
+    .map{
+      padding-bottom: 50px;
+    }
+
+    .map-iframe {
+      height: 410px;
+    }
+    .about__inner {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
+    .about__popup{
+      min-height: 400px;
+    }
+
+    .about{
+      padding-bottom: 50px;
+    }
+
+    .gallery{
+      padding-bottom: 50px;
+    }
+
+    .tour{
+      padding: 50px 0;
+    }
+
+    .tour__box{
+      column-count: 1;
+    }
+    .tiur__title{
+      margin-bottom: 40px;
+    }
+
+    .tour__info{
+      grid-template-columns: repeat (2,1fr );
+    }
+
+    .booking{
+      padding: 50px 0;
+    }
+    .booking__input{
+      width: 100%;
+    }
+
+    .booking__label{
+      margin-top: -192px;
+      margin-left: 50px;
+      width: 100%;
+    }
+    .booking__btn{
+     margin: 0 auto;
+    }
+
+    .footer{padding: 50px 0;}
+
+    .footer__logo{
+      margin-bottom: 40px;
+    }
+
+    .footer__box{
+      display: block;
+      text-align: center;
+    }
+
+    .footer__info{
+      margin: 0 auto 25px; 
+    }
+
+    .footer__adress{
+      margin: 0 auto 25px;
+    }
+
+    .footer__contacts{
+      margin: 0 auto;
+    }
 
   }
 
@@ -664,6 +758,19 @@ margin-bottom: 15px;
   .popular__items{
     grid-template-columns: repeat(1,1fr);
   }
+
+  .gallery__item-inner{
+    grid-template-columns: repeat(1,1fr );
+  }
+
+  .gallery__title{
+    width: 100%;
+    text-align: left;
+
+  }
+  .gallery__top{
+    flex-wrap: wrap;
+  }
 }
   
 
@@ -677,5 +784,15 @@ margin-bottom: 15px;
      .direction__inner {
        grid-template-columns: repeat(1, 1fr);
        
+     }
+
+     .tour__info {
+       grid-template-columns: repeat(1, 1fr);
+     }
+   }
+
+   @media (max-width:460px){
+     .about__popup{
+       min-height: 280px;
      }
    }
